@@ -68,7 +68,7 @@ interface Iperson {
   age: number;
 }
 
-class Person extends Book09 {
+class Person extends Book09 implements Iperson {
   constructor(public name: string, public age: number, leafs: number) {
     super(leafs);
   }
