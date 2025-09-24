@@ -100,3 +100,9 @@ const ReducerFn = (state: INITial, action: Action): INITial => {
 };
 
 const [state, dispatch] = useReducer(ReducerFn, init);
+
+//some more codes
+
+const data11 = {
+  date: new Date().getDate().toFixed(2),
+};
