@@ -79,3 +79,24 @@ class Person extends Book09 implements Iperson {
 
 const person = new Person("Adams", 90, 1000);
 console.log(person.getDetails());
+
+type INITial = {
+  name: string;
+  age: number;
+};
+
+type Action = {
+  type: string;
+  payload: string;
+};
+
+const init: INITial = {
+  name: "ada",
+  age: 89,
+};
+
+const ReducerFn = (state: INITial, action: Action): INITial => {
+  return state;
+};
+
+const [state, dispatch] = useReducer(ReducerFn, init);
