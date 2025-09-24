@@ -99,10 +99,20 @@ const ReducerFn = (state: INITial, action: Action): INITial => {
   return state;
 };
 
-const [state, dispatch] = useReducer(ReducerFn, init);
+//const [state, dispatch] = useReducer(ReducerFn, init);
 
 //some more codes
 
-const data11 = {
-  date: new Date().getDate().toFixed(2),
+type DataFN = {
+  date: Date;
+  lastedate: Date;
 };
+
+const data11: DataFN = {
+  date: new Date(),
+  lastedate: new Date(),
+};
+
+const last = data11.lastedate;
+
+
