@@ -99,20 +99,20 @@ const ReducerFn = (state: INITial, action: Action): INITial => {
   return state;
 };
 
-//const [state, dispatch] = useReducer(ReducerFn, init);
+const [state, dispatch] = useReducer(ReducerFn, init);
 
-//some more codes
+//some more codes to create a merge conflict
 
 type DataFN = {
-  date: Date;
+  dateNF: Date;
   lastedate: Date;
 };
 
 const data11: DataFN = {
-  date: new Date(),
+  dateNF: new Date(),
   lastedate: new Date(),
 };
 
 const last = data11.lastedate;
-
-
+const lasttwo = data11.lastedate;
+const lastthree = data11.lastedate.getDate().toString().trim();
